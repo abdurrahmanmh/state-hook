@@ -5,16 +5,20 @@ import HookCounter from "./components/HookCounter";
 import HookCounter2 from "./components/HookCounter2";
 import HookCounter3 from "./components/HookCounter3";
 import HookCounter4 from "./components/HookCounter4";
+import ClassCounter1 from "./components/ClassCounter1";
+import HookCounter1 from "./components/HookCounter1";
 
 function App() {
   return (
     <div className="App">
-
-      
+      <h3>Hook Counter 1</h3>
+      <HookCounter1 />
+      <h3>Class Counter 1</h3>
+      <ClassCounter1 />
       <h3>Hook Counter 4</h3>
-      <HookCounter4/>
+      <HookCounter4 />
       <h3>Hook Counter 3</h3>
-      <HookCounter3/>
+      <HookCounter3 />
       <h3>Hook Counter 2</h3>
       <HookCounter2 />
       <h3>Hook Counter</h3>
