@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 function HookCounter1() {
   const [count, setCount] = useState(0);
+
   const [name, setName] = useState("");
 
   useEffect(() => {
