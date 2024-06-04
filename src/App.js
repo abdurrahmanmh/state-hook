@@ -1,4 +1,5 @@
 import logo from "./logo.svg";
+import React from "react";
 import "./App.css";
 import ClassCounter from "./components/ClassCounter";
 import HookCounter from "./components/HookCounter";
@@ -13,17 +14,28 @@ import MouseContainer from "./components/MouseContainer";
 import IntervalClassCounter from "./components/IntervalClassCounter";
 import IntervalHookCounter from "./components/IntervalHookCounter";
 import DataFetching from "./components/DataFetching";
+import ComponentC from "./components/ComponentC";
+
+export const UserContext = React.createContext();
+export const ChannelContext = React.createContext();
 
 function App() {
   return (
     <div className="App">
-      <DataFetching/>
+      <UserContext.Provider value={"Wish Wash"}>
+        <h3>Use Context Hook</h3>
+        <ChannelContext.Provider value={"Codashop"}>
+          <ComponentC />
+        </ChannelContext.Provider>
+      </UserContext.Provider>
+
+      <DataFetching />
       <h3>Interval Hook Counter</h3>
-      <IntervalHookCounter/>
+      <IntervalHookCounter />
       <h3>Interval Class Counter</h3>
-      <IntervalClassCounter/>
+      <IntervalClassCounter />
       <h3>Mouse Container</h3>
-      <MouseContainer/>
+      <MouseContainer />
 
       <h3>Hook Mouse</h3>
       <HookMouse />
