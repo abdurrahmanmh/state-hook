@@ -16,6 +16,7 @@ import IntervalHookCounter from "./components/IntervalHookCounter";
 import DataFetching from "./components/DataFetching";
 import ComponentC from "./components/ComponentC";
 import CounterOne from "./components/CounterOne";
+import CounterTwo from "./components/CounterTwo";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -23,6 +24,8 @@ export const ChannelContext = React.createContext();
 function App() {
   return (
     <div className="App">
+      <h3>Counter two use reducer</h3>
+      <CounterTwo/>
       <h3>use reducer</h3>
       <CounterOne/>
 
